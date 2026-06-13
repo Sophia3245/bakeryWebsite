@@ -161,3 +161,19 @@ header {
     display: inline-block;
     cursor: pointer;
 }
+.clipBordButton {
+    border-radius: 6dvw;
+    border:none;
+    width: 6dvw;
+    height: 6dvw;
+    transition: box-shadow 0.25s ease;
+    background-color:#f4c2c257;
+    background-image: url("copyToClipBord.png");
+    background-position: center;
+    background-size:  4dvw, 5dvh;
+    background-repeat: no-repeat;
+    font-weight:bold;
+}
+.clipBordButton:hover {
+    box-shadow: 0 0 8px #F4C2C2 ;
+}

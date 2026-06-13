@@ -4,7 +4,18 @@
     <link rel="stylesheet" href="/styles/style.css">
     <script>
         function helpButtonsAhhg() {
-            
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            alert("Copied to Clip Bord: " + copyText.value);
         }
     </script>
 </head>
@@ -26,7 +37,8 @@
             <a href="https://www.tiktok.com/@theflouristboutique" class="findUsLinks" style="font-size: 1.5dvw;">TikTok</a>
             <a href="https://www.instagram.com/theflouristboutique/" class="findUsLinks" style="font-size: 1.5dvw;">Instagram</a>
             <a href="https://www.instagram.com/theflouristboutique/" class="findUsLinks" style="font-size: 1.5dvw;">Pintrest</a>
-        <h6>Email:</h6><p>theflouristboutique@gmail.com</p><button onclick="helpButtonsAhhg()">Copy to Clip Bord</button> <!--Add a copy to click bord button here-->
+        <h6>Email:</h6><p>theflouristboutique@gmail.com</p><button onclick="helpButtonsAhhg()" class="clipBordButton">Copy to Clip Bord</button> <!--Add a copy to click bord button here-->
+        <input id="myInput" value="theflouristboutique@gmail.com" style="display:none;">
         </div>
         </div>
     </div>
