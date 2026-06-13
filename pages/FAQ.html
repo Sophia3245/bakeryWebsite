@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script>
+        function dropdown() {
+            var x = document.getElementById("helpICantThinkOfAName");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+        }
+    </script>
+    <style>
+        #helpICantThinkOfAName {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="/styles/logo.jpeg" alt="click here to return home" width="200px" height="200px"></a>
+        
+        <a href="FAQ.html" class="headerButtons" style="box-shadow: 0 0 8px #f4c2c2; background-color: #f8bdbdc2;"><div class="headerButtonsText"><h6>FAQ</h6></div></a>
+        <a href="menu.html" class="headerButtons"><div class="headerButtonsText"><h6>Products</h6></div></a>
+        <a href="aboutUs.html" class="headerButtons"><div class="headerButtonsText"><h6>About Us</h6></div></a>
+        <a href="contactUs.html" class="headerButtons"><div class="headerButtonsText"><h6>Contact Us</h6></div></a>
+    </header>
+    <div class="main">
+        <h1>The Flourist's Boutique</h1>
+        <h3 style="color: #5e4b4b94;">FAQ</h3>
+        <div class="FAQs">
+            <div class="QA">
+                <button onclick="dropdown()"><h4>Do you deliver?</h4></button>
+                <div id="helpICantThinkOfAName"><h6>No we dont deliver. You have to pick up from the agreed location. This is for our safty</h6></div>
+            </div>
+            <div class="QA">
+                <button onclick="dropdown()"><h4>How much notice do you need?</h4></button>
+                <div id="helpICantThinkOfAName"><h6>A minimum of a week is required.</h6></div>
+            </div>
+            <div class="QA">
+                <button onclick="dropdown()"><h4>How can I order something?</h4></button>
+                <div id="helpICantThinkOfAName"><h6>You can place an order through direct messaging us through Instagram or alternitivly sending us an email. We use this as it is an open ongoing form of comunication incase of any dificultys. We have a template you can copy and paste and fill in the nessisary details. Make sure to double check before sending!</h6></div>
+            </div>
+            <div class="QA">
+                <button onclick="dropdown()"><h4>Cancellation Police</h4></button>
+                <div id="helpICantThinkOfAName">                <h6>You are able to cancle your order a week in advance to collection this is to help our planning for other orders and our schedules. A week before collection we ask for a downpaidment of 50% of the product. The other 50% would be payed once you recieve the baked goods. This is to ensure that some of the ingridents we used to bake can be payed for</h6></h6></div>
+            </div>
+            <div class="QA">
+                <button onclick="dropdown()"><h4>Do you deliver?</h4></button>
+                <div id="helpICantThinkOfAName"><h6>No we dont deliver. You have to pick up from the agreed location. This is for our safty</h6></div>
+            </div>
+            <div class="QA">
+                <button onclick="dropdown()"><h4>Do you deliver?</h4></button>
+                <div id="helpICantThinkOfAName"><h6>No we dont deliver. You have to pick up from the agreed location. This is for our safty</h6></div>
+            </div>
+
+            
+            
+            <div class="QA">
+                <h4>Payment methods</h4>
+                <h6>We only take card for the first 50% but can take card or cash for the second payment. A week before youll be sent details which if not payed no product will be recieve and the order will be considered cancled.</h6>
+            </div>
+            <div class="QA">
+                <h4>Allergy Information</h4>
+                <h6>Since this is an at home bakery we sadly cant garendty complte alergy free. If you have any concerens we ask to contact us.</h6>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="allOfFooter">
+            <div class="otherPartOfFooter">
+                <h5>Where Every Treat Blossoms</h5>
+                <h6>Dublin, Ireland</h6>
+            </div>
+            <div class="Useful">
+                <h6>Useful Links</h6>
+                <a href="feedback.html" class="usefulLinks"><p>Feedback</p></a>
+                <a href="termsAndCon.html" class="usefulLinks" style="width: 15dvw;"><p>Terms & Conditions</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
